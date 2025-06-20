@@ -8,11 +8,13 @@ Below are the goals of this project. The self-imposed regulations I will be foll
 
 - A front splitter, diffuser, rear wing, and electronics cooling CFD optimized
 - Double Wishbone suspension
-- AWD with two sensored brushless motors
+- RWD with one sensored brushless motors
 - Mostly made of plastic with the exception of:
   - Gearing in the diffs
   - The electronic parts
   - The wheels
+  - Any gaskets that may be required
+  - Fasteners
 - Remote controlled
 
 ### Journal
