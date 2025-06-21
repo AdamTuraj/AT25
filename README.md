@@ -8,7 +8,8 @@ Below are the goals of this project. The self-imposed regulations I will be foll
 
 - Aerodynamic elements that work and are CFD optimized
 - Double Wishbone suspension
-- RWD with one sensored brushless motors
+- AWD with one sensored brushless motors
+- Braking with the electric motor
 - Mostly made of plastic with the exception of:
   - Gearing in the diffs
   - The electronic parts

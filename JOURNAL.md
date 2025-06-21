@@ -1,8 +1,21 @@
+---
+title: "AT25"
+author: "Adam Turaj"
+description: "A GT3 inspired RC car"
+created_at: "2024-03-20"
+---
+
 # AT25 Journal
 
 This journal will document my findings and progress throughout the project.
 
-## Day 1
+## Day 1 (June 19th)
+
+**Time Spent**: 3
+
+**Total Time on Project**: 3
+
+---
 
 Day 1 involved researching and selecting the necessary components. I plan to order most of the parts from GreatHobbies, a Canadian hobby store.
 
@@ -14,7 +27,15 @@ Lastly, I selected the tires. Although I originally wanted RC slick tires, the b
 
 The BOM can be found at the following link: [AT25 BOM](https://docs.google.com/spreadsheets/d/1flXe85N5WV3nN8ESYz18NZuvuu6GO_V06G4YLhqS2Ls/edit?usp=sharing)
 
-## Day 2
+![The BOM](https://hc-cdn.hel1.your-objectstorage.com/s/v3/34b6dca96e3978a9ee3a535140ec9d82047ec993_image.png)
+
+## Day 2 (June 20th)
+
+**Time Spent**: 2
+
+**Total Time on Project**: 5
+
+---
 
 Today, I began laying out the general design of the car. I began by learning how the aerodynamic elements work and the different elements used. Through this, I got refreshed on Bernoulli's and got a surface level understanding on how the important elements work.
 
