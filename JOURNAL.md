@@ -46,3 +46,23 @@ Finally, I made and found the 3D models for the components I will be using. My p
 Note: I changed the battery to a different, similar spec'd one due to a proprietary connector.
 
 ![The rough sketch of the RC car](https://hc-cdn.hel1.your-objectstorage.com/s/v3/385cd5cd533fd6cc2addcd017ffad2ef2bab02a1_img_8022.jpeg)
+
+## Day 3 (June 21st)
+
+**Time Spent**: 5
+
+**Total Time on Project**: 10
+
+---
+
+In Day 3, I began work on the brushless control board. The IC pre-driver I selected was the DRV8323S due to its 1 PWM mode (no extra code required), my previous experience with it, and its availability.
+
+I preferably would run the DRV8320S but it is out of stock so I had to compromise. This IC would be better as it doesn't include the amplifiers which are not required due to the sensored motors not needing to know the current flowing through the coils.
+
+Afterwards, I chose the CSD87333Q3D FETs as it is TI (I love Texas Instruments), it integrates both the high and low MOSFETs, supports up to 15A (the limit I'm designing for), and the high efficiency while being cheap and available.
+
+Drawing the schematic mainly involved following the diagrams provided by TI. It was very straightforward; however, the PCB layout will not.
+
+The final schematic for the board is this:
+
+![Final Schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/8eae5faa91f8c98d03fa222825bc17d268089a94_image.png)

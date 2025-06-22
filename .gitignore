@@ -1,0 +1,9 @@
+// Kicad
+
+*.lck
+fp-info-cache
+Motor_Driver-backups/
+
+// Miscellaneous
+.DS_Store
+*.bck
