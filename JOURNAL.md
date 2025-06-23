@@ -66,3 +66,29 @@ Drawing the schematic mainly involved following the diagrams provided by TI. It 
 The final schematic for the board is this:
 
 ![Final Schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/8eae5faa91f8c98d03fa222825bc17d268089a94_image.png)
+
+## Day 4 (June 22nd)
+
+**Time Spent**: 3
+
+**Total Time on Project**: 13
+
+---
+
+I did some more research while looking for footprints and came to the following conclusions:
+
+- I will be attempting to assemble the boards myself again
+- Bulk capacitor banks are required
+- The DRV8320RS is preferred for my application as:
+  - I do not need the current sense amplifiers (I'm using a sensored motor)
+  - The buck converter is necessary for my application
+
+Regarding conclusion #1, I will be assembling them myself due to the high costs of JLCPCB assembly, and my previous experience assembling SMD boards. I had issues assembling my last board which is the reason I was planning on using PCBA; however, I made the realization that my solder paste is expired which I believe is the source of the problems.
+
+After making these conclusions, I adjusted my schematic to reflect them. This included updating the DRV footprint (although I haven't changed the pinout from the DRV8323RS -> DRV8320RS). The capacitance of the bulk bank was stolen from an existing open source design.
+
+I started adding the circuitry around the buck converter but still need to fill in the values. Below is my plan on how the board will be powered:
+![Flow chart of power circuity](https://hc-cdn.hel1.your-objectstorage.com/s/v3/aa759014652247c120b7a52cfe677ecdad9f329c_image.png)
+
+And here is the current revision of the schematic:
+![Current Schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/61036e09d5d0d80cc4c21ae81d8042cd64b4b91d_image.png)
