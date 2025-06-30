@@ -2,7 +2,7 @@
 title: "AT25"
 author: "Adam Turaj"
 description: "A GT3 inspired RC car"
-created_at: "2024-03-20"
+created_at: "2025-06-16"
 ---
 
 # AT25 Journal
