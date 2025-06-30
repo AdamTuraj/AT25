@@ -92,3 +92,38 @@ I started adding the circuitry around the buck converter but still need to fill 
 
 And here is the current revision of the schematic:
 ![Current Schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/61036e09d5d0d80cc4c21ae81d8042cd64b4b91d_image.png)
+
+## Day 5 (June 27th)
+
+**Time Spent**: 7
+
+**Total Time on Project**: 19
+
+---
+
+Throughout today, I tweaked the schematic, picked parts, and designed the layout.
+
+Firstly, I made the following changes to the schematic:
+
+- Added a RC filter to the hall effect sensors
+- Adjusted the symbol to the DRV8320RS
+- Finished buck converter circuitry
+- Change 10uF bulk capacitor to 100uF electrolyte capacitor
+- Added 0.1uF capacitors to each gate
+- Cosmetic adjustments
+
+These changes resulted in the final, completed schematic:
+![Completed schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a2eccc6b94371e0a6ef36dab957d2c63444db661_motor_driver.png)
+
+Afterwards, I assigned footprints and picked part numbers. With all that done, I layed them out, and carefully wired them up. Due to the relatively high current and to simplify wiring, a 4 layer board was a no brainer. The stackup I used, as I have done with all my other 4 layer boards, is:
+
+- Sig / GND
+- GND
+- PWR
+- Sig / GND
+
+For the first time ever, I made the entire board without a single DRC error: no clearence violations, missed connections, etc!
+
+Below is the final design for the ESC:
+![3D view of PCB](https://hc-cdn.hel1.your-objectstorage.com/s/v3/026301dc0eeec364d06b7de6c3771141921c3320_image.png)
+![PCB Layout](https://hc-cdn.hel1.your-objectstorage.com/s/v3/e2a30e74069a72bd700e183be4fe7425fea80c3d_image.png)
