@@ -127,3 +127,33 @@ For the first time ever, I made the entire board without a single DRC error: no 
 Below is the final design for the ESC:
 ![3D view of PCB](https://hc-cdn.hel1.your-objectstorage.com/s/v3/026301dc0eeec364d06b7de6c3771141921c3320_image.png)
 ![PCB Layout](https://hc-cdn.hel1.your-objectstorage.com/s/v3/e2a30e74069a72bd700e183be4fe7425fea80c3d_image.png)
+
+## Day 6 (July 2nd)
+
+**Time Spent**: 5
+
+**Total Time on Project**: 24
+
+---
+
+I began by starting the motherboard. This first involved picking the MCU which I chose to be the STM32F072. I chose it due to its small form factor (48 pins), availability, price, and it supporting all the peripherals I needed.
+
+Afterwards, I assigned all the pins in the STM32CubeMX. I assigned:
+
+- SWD
+- USB
+- DRV8320 pins (SPI + PWM, DIR, and BREAK)
+- Camera SPI (for the future)
+- LoRa UART
+- IMU I2C
+- Battery and Temperature ADC's
+- The three hall effect sensors inputs
+
+![STM32CubeMX pin assignment](https://hc-cdn.hel1.your-objectstorage.com/s/v3/de644965aa83bdc954065a110a10c39c13d6d757_image.png)
+
+While assigning the pins, I fell down a rabbit hole which led to me redesigning the ESC control board to accomodate more current (25A continuous instead of 15A), adjust the bulk capacitors, and improve the routing.
+
+I found this really good article from [Alexander Sysoev on Zubax](https://forum.zubax.com/t/how-i-learned-to-stop-worrying-and-love-esc-development/1553/5) which helped me pick the bulk capacitors, make sure the new MOSFET is sufficient for my use casee, and improve the routing.
+
+Here is the updated ESC schematic:
+![ESC Schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/e9072513b912c05c81495086bf46fe461a3b51f6_image.png)

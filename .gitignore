@@ -2,6 +2,9 @@
 *#auto_saved_files#*
 *.lck
 fp-info-cache
+
+*.kicad_prl
+
 Motor_Driver-backups/
 Motherboard-backups/
 
